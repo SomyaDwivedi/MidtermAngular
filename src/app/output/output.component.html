@@ -1,8 +1,8 @@
-<div class="container">
-  <h2>Teacher Information</h2>
-  <img src="assets/teacher_info.png" alt="Teacher Info Image">
-  <p><strong>First Name:</strong> {{ teacher.firstName }}</p>
-  <p><strong>Last Name:</strong> {{ teacher.lastName }}</p>
-  <p><strong>Employment Term:</strong> {{ teacher.term }}</p>
+<div class="teacherData">
+
+<h2><img [ngSrc]="imageSrc()" width="40" height="20" alt="This is the icon logo of Angular" />Review Output<img [ngSrc]="imageSrc()" width="40" height="20" alt="This is the icon logo of Angular" /></h2>
+  <p><strong>First Name:</strong> {{ teacher.fName }}</p>
+  <p><strong>Last Name:</strong> {{ teacher.lName }}</p>
+  <p><strong>Employment Term:</strong> {{ teacher.terms }}</p>
   <button routerLink="/input">Back to Input</button>
 </div>
