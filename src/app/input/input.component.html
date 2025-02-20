@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Enter Teacher Information</h2>
+  <img src="assets/teacher.jpg" alt="Teacher Image"> <form (ngSubmit)="onSubmit()">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" [(ngModel)]="teacher.firstName" required><br><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" [(ngModel)]="teacher.lastName" required><br><br>
+
+  <p>Employment Term:</p>
+  <label>
+    <input type="radio" name="term" value="Full-time" [(ngModel)]="teacher.term" required> Full-time
+  </label>
+  <label>
+    <input type="radio" name="term" value="Part-time" [(ngModel)]="teacher.term"> Part-time
+  </label>
+  <label>
+    <input type="radio" name="term" value="Partial load" [(ngModel)]="teacher.term"> Partial load
+  </label>
+  <label>
+    <input type="radio" name="term" value="Sessional" [(ngModel)]="teacher.term"> Sessional
+  </label><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+</div>
